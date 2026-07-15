@@ -1749,7 +1749,7 @@ footer, header, hgroup, main, menu, nav, section {
         </div>
       </div>
       <p class="autoshow fade-up" style="margin-top: 1.8rem; font-size: 1.25rem; animation-delay:.5s;">
-        같은 기능, 이름만 다릅니다 — <span class="pill">GPTs <span class="muted">(ChatGPT)</span></span>
+        시킬 일을 미리 지정해둘 수 있습니다. — <span class="pill">GPTs <span class="muted">(ChatGPT)</span></span>
         <span class="pill green">Projects <span class="muted">(ChatGPT · Claude)</span></span>
         <span class="pill amber">Gems <span class="muted">(Gemini)</span></span>
       </p>
@@ -1812,7 +1812,7 @@ footer, header, hgroup, main, menu, nav, section {
           <span class="eb">세 서비스 모두 제공 — 수십 개 자료를 읽고 <b>출처 달린 조사 보고서</b>로 돌아옵니다.</span>
         </div>
         <div class="eff-row autoshow fade-right" style="animation-delay:.62s;">
-          <span class="en">💻 Claude Code · Codex</span>
+          <span class="en">💻 Claude Code · Codex · Gemini CLI 에이전트</span>
           <span class="eb">코드가 필요한 작업을 통째로 — 데이터 처리·자동화를 알아서 만들고 실행합니다.</span>
         </div>
       </div>
@@ -1826,25 +1826,25 @@ footer, header, hgroup, main, menu, nav, section {
       <h2>한 페이지 지도 — <span class="grad">단계 × 도구 × 기대 효과</span>.</h2>
       <div style="margin-top: 2.2rem; display:flex; flex-direction:column; gap: .8rem; max-width: 1080px;">
         <div class="eff-row autoshow fade-right" style="padding: .9rem 1.2rem;">
-          <span class="tok"><span class="pill">STEP 1</span></span>
+          <span class="ea"><span class="pill">STEP 1</span></span>
           <span class="en">💬 대화하기</span>
           <span class="eb">문서 초안 · 요약 · 번역 · 아이디어</span>
           <span class="arr">→</span>
-          <span class="ea accent2">해당 업무 시간 1/2 ~ 1/4</span>
+          <span class="tok accent2">해당 업무 시간 1/2 ~ 1/4</span>
         </div>
         <div class="eff-row autoshow fade-right" style="padding: .9rem 1.2rem; animation-delay:.15s;">
-          <span class="tok"><span class="pill green">STEP 2</span></span>
+          <span class="ea"><span class="pill green">STEP 2</span></span>
           <span class="en">🔧 도구 만들기</span>
           <span class="eb">반복 보고 · 기준문서 Q&amp;A · 간단한 앱/시안</span>
           <span class="arr">→</span>
-          <span class="ea accent2">반복 업무는 거의 자동화</span>
+          <span class="tok accent2">반복 업무는 거의 자동화</span>
         </div>
         <div class="eff-row autoshow fade-right" style="padding: .9rem 1.2rem; animation-delay:.3s;">
-          <span class="tok"><span class="pill amber">STEP 3</span></span>
+          <span class="ea"><span class="pill amber">STEP 3</span></span>
           <span class="en">🤖 통째로 맡기기</span>
           <span class="eb">심층 조사 · 데이터 처리 · 코드 작업</span>
           <span class="arr">→</span>
-          <span class="ea accent2">반나절 작업이 백그라운드로</span>
+          <span class="tok accent2">반나절 작업이 백그라운드로</span>
         </div>
       </div>
       <div class="quote autoshow fade-up" style="margin-top: 2rem; animation-delay:.5s;">
@@ -1905,15 +1905,48 @@ footer, header, hgroup, main, menu, nav, section {
       </div>
       <p class="autoshow fade-up" style="margin-top: 1.6rem; font-size: 1.25rem; animation-delay:.95s;">
         내가 <b>뭘 빠뜨렸는지</b>를 AI가 대신 찾아줍니다 — 메타인지 보조.
-        이 요청문을 저장해 두면 그게 곧 <span class="accent">나만의 스킬</span>입니다.
+        <!-- 이 요청문을 저장해 두면 그게 곧 <span class="accent">나만의 스킬</span>입니다. -->
       </p>
     </section>
 
-    <!-- ============= 18. 꿀팁 3: 인기 스킬 활용 ============= -->
+    <!-- ============= 18. 꿀팁 2.5: 플랜(Plan) 모드 ============= -->
+    <section>
+      <h2>메타인지를 <span class="accent2">버튼 하나로</span> — 플랜(Plan) 모드.</h2>
+      <p style="margin-top: .4rem; font-size: 1.3rem;">
+        곧장 실행하지 않고 <b>"이렇게 하겠습니다"라는 계획부터 보여주는</b> 모드.
+        앞 장의 <span class="accent">메타인지(계획 → 점검 → 실행)</span>를, 익히지 않고도 그대로 빌려 씁니다.
+      </p>
+      <div class="grid-3" style="margin-top: 1.7rem; align-items: stretch;">
+        <div class="card autoshow fade-up">
+          <h3>① 계획 제시</h3>
+          <p class="small">AI가 <b>무엇을 · 어떤 순서로</b> 할지 먼저 정리해서 보여줍니다.</p>
+        </div>
+        <div class="card good autoshow fade-up" style="animation-delay:.15s;">
+          <h3>② 내가 확인·수정</h3>
+          <p class="small">방향이 맞는지 훑어보고 <b>고칠 부분만 말합니다.</b> 여기서 실수를 미리 걸러냅니다.</p>
+        </div>
+        <div class="card autoshow fade-up" style="animation-delay:.3s;">
+          <h3>③ 승인 후 실행</h3>
+          <p class="small">확정된 계획대로 진행 — <b>엉뚱한 결과에 시간 낭비할 일이 줄어듭니다.</b></p>
+        </div>
+      </div>
+      <p class="autoshow fade-up" style="margin-top: 1.4rem; font-size: 1.22rem; animation-delay:.7s;">
+        코딩·에이전트형 도구엔 <b>'플랜 모드'가 버튼으로</b> 있고, 일반 챗 서비스에선
+        <span class="accent">아래 한 문장</span>이면 똑같이 됩니다.
+      </p>
+      <div class="chat compact" style="margin-top: 1.6rem;">
+        <div class="bubble user autoshow fade-left" style="animation-delay:1.25s;">
+          <span class="who">나</span>
+          바로 쓰지 말고 — <b>먼저 계획부터 세워서 보여줘. 내가 확인하면 그때 진행해.</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= 19. 꿀팁 3: 인기 스킬 활용 ============= -->
     <section>
       <h2>잘 만든 지시문은 이미 <span class="accent4">공유되고 있습니다</span> — 스킬.</h2>
       <p style="margin-top: .4rem; font-size: 1.3rem;">
-        <b>스킬</b> = 특정 작업의 요령을 담아 둔 지시문 패키지. 불러오기만 하면 그 분야 전문가처럼 움직입니다.
+        <b>Skill</b> = 특정 작업의 요령을 담아 둔 지시문 패키지. 불러오기만 하면 그 분야 전문가처럼 움직입니다.
       </p>
       <div class="grid-2" style="margin-top: 1.7rem; align-items: stretch;">
         <div class="card autoshow fade-right">
@@ -1935,33 +1968,33 @@ footer, header, hgroup, main, menu, nav, section {
       </div>
     </section>
 
-    <!-- ============= 19. 꿀팁 4: 모델 단계적 선택 ============= -->
+    <!-- ============= 20. 꿀팁 4: 모델 단계적 선택 ============= -->
     <section>
       <h2>어떤 모델에게 맡길까 — <span class="accent">위임 상대</span>를 고르듯.</h2>
       <div class="grid-3" style="margin-top: 2.2rem; align-items: stretch;">
         <div class="card autoshow fade-up">
           <h3>⚡ 빠른 모델</h3>
           <p class="small"><b>즉답형 주니어.</b> 간단한 질문, 짧은 요약, 가벼운 초안 — 즉시, 가볍게.</p>
-          <p class="muted tiny mono" style="margin-top:.8rem;">예: GPT Mini · Claude Haiku · Gemini Flash Lite</p>
+          <p class="muted tiny mono" style="margin-top:.8rem;">예: GPT Luna · Claude Haiku · Gemini Flash Lite</p>
         </div>
         <div class="card good autoshow fade-up" style="animation-delay:.15s;">
           <h3>🎯 표준 모델</h3>
-          <p class="small"><b>에이스 대리.</b> 대부분의 업무에 충분한 <b>기본값</b> — 고민되면 이걸로.</p>
-          <p class="muted tiny mono" style="margin-top:.8rem;">예: GPT · Claude Sonnet · Gemini Flash</p>
+          <p class="small"><b>에이스 대리.</b> 대부분의 업무에 충분한 <b>기본값</b> <br/> — 고민되면 이걸로.</p>
+          <p class="muted tiny mono" style="margin-top:.8rem;">예: GPT Terra · Claude Sonnet · Gemini Flash</p>
         </div>
         <div class="card autoshow fade-up" style="animation-delay:.3s;">
           <h3>🧠 최고 성능 모델</h3>
-          <p class="small"><b>베테랑 전문가.</b> 복잡한 분석, 중요한 보고 — 느리지만 깊게 봅니다.</p>
-          <p class="muted tiny mono" style="margin-top:.8rem;">예: GPT Pro · Claude Opus/Fable · Gemini Pro</p>
+          <p class="small"><b>베테랑 전문가.</b> 복잡한 분석, 중요한 보고 <br/> — 깊게 보지만 느립니다.</p>
+          <p class="muted tiny mono" style="margin-top:.8rem;">예: GPT Sol · Claude Opus/Fable · Gemini Pro</p>
         </div>
       </div>
       <div class="quote autoshow fade-up" style="margin-top: 2.2rem; animation-delay:.5s;">
-        모든 일을 베테랑에게 맡기면 느리고, 모든 일을 주니어에게 맡기면 불안하죠 —
-        <span class="accent2">일의 크기에 맞게</span> 고릅니다.
+        모든 일을 베테랑에게 맡기면 느리고 (심지어 비싸고), 반대로 모든 일을 주니어에게 맡기면 불안하죠 <br/>
+        — <span class="accent2">일의 수준과 크기에 맞게</span> 고릅니다.
       </div>
     </section>
 
-    <!-- ============= 20. 꿀팁 5: Effort(생각 시간) 선택 ============= -->
+    <!-- ============= 21. 꿀팁 5: Effort(생각 시간) 선택 ============= -->
     <section>
       <h2>같은 모델도 — <span class="accent2">생각할 시간</span>을 정해줄 수 있습니다.</h2>
       <div class="grid-2" style="margin-top: 1.9rem; align-items: stretch;">
@@ -2001,7 +2034,7 @@ footer, header, hgroup, main, menu, nav, section {
       </p>
     </section>
 
-    <!-- ============= 21. 그럴듯하게 틀립니다 ============= -->
+    <!-- ============= 22. 그럴듯하게 틀립니다 ============= -->
     <section>
       <div class="chip">CHAPTER 6 · 주의사항</div>
       <h2>AI는 <span class="accent3">그럴듯하게</span> 틀립니다.</h2>
@@ -2023,7 +2056,7 @@ footer, header, hgroup, main, menu, nav, section {
       </div>
     </section>
 
-    <!-- ============= 22. 오늘의 한 페이지 요약 ============= -->
+    <!-- ============= 23. 오늘의 한 페이지 요약 ============= -->
     <section>
       <div class="chip">RECAP</div>
       <h2>오늘의 <span class="grad">한 페이지 요약</span>.</h2>
@@ -2051,7 +2084,7 @@ footer, header, hgroup, main, menu, nav, section {
       </div>
     </section>
 
-    <!-- ============= 23. Q&A ============= -->
+    <!-- ============= 24. Q&A ============= -->
     <section>
       <div style="height: 100%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
         <div class="chip">END</div>
